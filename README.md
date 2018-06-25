@@ -4,7 +4,7 @@ A Hugo shortcode for beautiful MacOS-like terminals in your web pages. More info
 
 ## Example usage
 
-'''
+```
 {{< terminal "jiri@jiri-mbp-pro" "~/Sites/jiridj.be (zsh)" >}}
 $ ls -l ~
 total 40
@@ -18,7 +18,7 @@ drwx------+  9 jiri  staff    306 Feb  3 10:26 Pictures
 drwxr-xr-x+  5 jiri  staff    170 Oct 19 14:23 Public
 $ _
 {{< /terminal >}}
-'''
+```
 
 ## Note
 
