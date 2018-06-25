@@ -2,7 +2,7 @@
 
 A Hugo shortcode for beautiful MacOS-like terminals in your web pages. More information can be found on my blog: [Sick and tired terminal screenshots?](https://jiridj.be/posts/macos-terminal-in-css/).
 
-Example usage:
+## Example usage
 
 '''
 {{< terminal "jiri@jiri-mbp-pro" "~/Sites/jiridj.be (zsh)" >}}
@@ -19,3 +19,11 @@ drwxr-xr-x+  5 jiri  staff    170 Oct 19 14:23 Public
 $ _
 {{< /terminal >}}
 '''
+
+## Note
+
+If you look at the HTML code, you'll notice I include the comment ```<!-- htmlmin:ignore -->``` before and after list of items. In command-line output whitespace is important.
+
+I use [HTMLMinifier](https://github.com/kangax/html-minifier) to compress the generated static site (html, css and javascript). HTMLMinifier needs to leave the whitespace in the terminal blocks alone. These comments instruct HTMLMinifier to ignore anything in between them. 
+
+You can leave out these two lines if you do not use HTMLMinifier. If you use another minifier, you'll have to customise this part to work for you.
