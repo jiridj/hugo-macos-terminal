@@ -22,8 +22,4 @@ $ _
 
 ## Note
 
-If you look at the HTML code, you'll notice I include the comment ```<!-- htmlmin:ignore -->``` before and after list of items. In command-line output whitespace is important.
-
-I use [HTMLMinifier](https://github.com/kangax/html-minifier) to compress the generated static site (html, css and javascript). HTMLMinifier needs to leave the whitespace in the terminal blocks alone. These comments instruct HTMLMinifier to ignore anything in between them. 
-
-You can leave out these two lines if you do not use HTMLMinifier. If you use another minifier, you'll have to customise this part to work for you.
+If you look at the shortcode, you'll notice I replace all spaces by non-breaking spaces. In command-line output whitespace is important, so I want to make sure it is preserved when you minify your html.
